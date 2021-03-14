@@ -1,0 +1,16 @@
+{
+    "plugins": [
+        "syntax-dynamic-import", 
+        "@babel/plugin-transform-async-to-generator",
+        "@babel/plugin-transform-modules-commonjs",
+        "@babel/transform-runtime"
+    ],
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "modules": false
+            }
+        ]
+    ]
+}
