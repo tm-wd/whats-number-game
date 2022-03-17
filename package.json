@@ -20,14 +20,15 @@
     "style-loader": "^2.0.0",
     "webpack": "^5.24.2",
     "webpack-cli": "^4.5.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
   },
   "version": "1.0.0",
   "description": "What's number",
   "name": "whats-number",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack serve --open",
+    "build": "webpack --config ./config/webpack.prod.js",
+    "start": "webpack serve --open --config ./config/webpack.dev.js",
     "css": "sass --no-source-map --watch ./assets/sass/style.scss:./assets/css/style.min.css --style compressed",
     "test": "jest  --collect-coverage"
   },
