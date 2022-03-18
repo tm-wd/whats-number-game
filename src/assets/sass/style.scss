@@ -156,13 +156,6 @@ body{
     order: 3;
     padding: .8em 1em .8em .8em;
     text-transform: uppercase;
-    &:before{
-        content: '';
-        display: inline-block;
-        height: 2em;
-        width: 2em;
-        background: url(../icons/refresh.svg) no-repeat center center / contain ;
-    }
     &:disabled{
         display: none;
     }
