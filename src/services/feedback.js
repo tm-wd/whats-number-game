@@ -1,4 +1,4 @@
-import { UTILS } from '../utils';
+import { UTILS } from './utils';
 
 export const feedback = (cls, text) => {
     

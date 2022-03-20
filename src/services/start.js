@@ -1,5 +1,5 @@
 import { UTILS } from "./utils";
-import { getAleatoryNumber } from '../components/getAleatoryNumber';
+import { getAleatoryNumber } from '../model';
 
 export const start = async () => {
     UTILS.BTNSEND.setAttribute('disabled', true);

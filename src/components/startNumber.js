@@ -4,7 +4,7 @@ import {
     UTILS,
     start,
     newNumber 
-} from '../utils';
+} from '../services';
 
 import { compareNumber } from './compareNumber';
 

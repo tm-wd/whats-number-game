@@ -3,7 +3,7 @@
 import{ 
     UTILS,
     feedback 
-} from '../utils';
+} from '../services';
 
 import { mountSegments } from './mountSegments';
 
