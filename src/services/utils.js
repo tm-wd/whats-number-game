@@ -1,11 +1,11 @@
-const utils = {
-    btnSend: document.querySelector(`.hint__send`),
-    inputSend: document.querySelector(`.hint__input`),
-    feedback: document.querySelector('.view-number'),
-    newNumber: document.querySelector('.new-number'),
-    hint: document.querySelectorAll('.number'),
-    segment: document.querySelector(`.view-number__number`),
-    reset: `<svg width="75" height="135" viewBox="0 0 75 135">
+export const UTILS = {
+    BTNSEND: document.querySelector(`.hint__send`),
+    INPUTSEND: document.querySelector(`.hint__input`),
+    FEEDBACK: document.querySelector('.view-number'),
+    NEWNUMBER: document.querySelector('.new-number'),
+    HINT: document.querySelectorAll('.number'),
+    SEGMENT: document.querySelector(`.view-number__number`),
+    RESET: `<svg width="75" height="135" viewBox="0 0 75 135">
                 <path d="M17.269 14.8295H57.5517L71.4885 1.59469C70.1985 0.597611 68.5846 3.8147e-06 66.8301 3.8147e-06H7.63794C5.89411 3.8147e-06 4.29303 0.589093 3.00726 1.57233L17.269 14.8295Z" fill="#262A34"/>
                 <path d="M1.71614 2.8155C0.644493 4.1311 0 5.80888 0 7.63687V59.4298C0 62.3986 1.69695 64.9659 4.17155 66.2293L15.8425 57.4825V15.947L1.71614 2.8155Z" fill="#262A34"/>
                 <path d="M58.6244 16.2662V57.4704L70.2954 66.2173C72.77 64.9539 74.4669 62.3866 74.4669 59.4177V7.62484C74.4669 5.80751 73.8299 4.14251 72.7721 2.83224L58.6244 16.2662Z" fill="#262A34"/>
@@ -16,13 +16,3 @@ const utils = {
             </svg>`,
 }
 
-export const { 
-    btnSend, 
-    inputSend ,
-    feedback,
-    classReference,
-    newNumber,
-    hint,
-    reset,
-    segment
-} = utils;
