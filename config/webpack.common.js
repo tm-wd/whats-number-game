@@ -3,11 +3,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        app: './src/index.js'
+        app: './src/index.ts'
     },
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, '../dist')
+    },
+    resolve: {
+        extensions: ['.ts', '.js', '.json']
     },
     plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
     module: {
@@ -21,14 +24,8 @@ module.exports = {
               { loader: "sass-loader" },
             ],
           },
-          {
-            test: /\.(png|jpe?g|gif|svg)$/i,
-            use: [
-              {
-                loader: 'file-loader',
-              },
-            ],
-          }
+          { test: /\.(png|jpe?g|gif|svg)$/i, loader: 'file-loader' },
+          { test: /\.([cm]?ts|tsx)$/, loader: 'ts-loader' }
         ],
       },
 }

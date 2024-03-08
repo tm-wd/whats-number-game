@@ -1,4 +1,6 @@
-export const UTILS = {
+import { TUTILS } from "../types/utils.types"
+
+export const UTILS:TUTILS = {
     BTNSEND: document.querySelector(`.hint__send`),
     INPUTSEND: document.querySelector(`.hint__input`),
     FEEDBACK: document.querySelector('.view-number'),
