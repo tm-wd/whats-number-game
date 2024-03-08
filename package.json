@@ -19,15 +19,15 @@
     "webpack-merge": "^5.8.0"
   },
   "version": "1.0.0",
-  "description": "What's number",
-  "name": "whats-number",
+  "description": "What's number game",
+  "name": "whats-number-game",
   "homepage": "http://tjmelo.github.io/whats-number-game/",
   "scripts": {
     "build": "webpack --config ./config/webpack.prod.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "start": "webpack serve --open --config ./config/webpack.dev.js",
-    "css": "sass --no-source-map --watch ./assets/sass/style.scss:./assets/css/style.min.css --style compressed",
+    "css": "sass --no-source-map --watch ./src/assets/sass/style.scss:./dist/style.min.css --style compressed",
     "test": "jest  --collect-coverage"
   },
   "dependencies": {
