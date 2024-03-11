@@ -1,8 +1,9 @@
 import { UTILS } from "./utils";
 import { start } from "./start";
+import { generatedNumber } from "./utils";
 
 export const newNumber = () => {
-    UTILS.NEWNUMBER.addEventListener('click', e => {
+    UTILS.NEWNUMBER.addEventListener('click', async e => {
         const classReference = document.querySelector('.feedback');
         e.preventDefault();
         classReference.remove();
@@ -14,6 +15,7 @@ export const newNumber = () => {
         UTILS.SEGMENT.innerHTML = UTILS.RESET;
     
         UTILS.HINT.forEach(h => h.removeAttribute('disabled', true));
-        start();
-    }, false);
+        generatedNumber = await start();
+
+    });
 }

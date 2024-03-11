@@ -6,12 +6,12 @@ import {
     newNumber 
 } from '../services';
 
+import { generatedNumber } from '../services/utils';
 import { compareNumber } from './compareNumber';
 
 export const startNumber = async () => {
-
-    const referenceNumber = await start();
-    referenceNumber === 502 && compareNumber(null, referenceNumber);
+    generatedNumber = await start();
+    generatedNumber === 502 && compareNumber(null, generatedNumber);
     
     UTILS.INPUTSEND.addEventListener('keypress', e => (e.keyCode !== 13) 
     ? ((e.keyCode < 48 || e.keyCode > 57) && e.preventDefault()) 
@@ -23,7 +23,7 @@ export const startNumber = async () => {
 
     UTILS.BTNSEND.addEventListener('click', e => {
         e.preventDefault();
-        compareNumber(UTILS.INPUTSEND.value, referenceNumber);
+        compareNumber(UTILS.INPUTSEND.value, generatedNumber);
         UTILS.INPUTSEND.value = '';
         UTILS.INPUTSEND.focus();
     })

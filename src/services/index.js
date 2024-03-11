@@ -7,5 +7,5 @@ export {
     start, 
     UTILS, 
     newNumber,
-    feedback,
+    feedback
 }
