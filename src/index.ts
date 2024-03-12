@@ -1,3 +1,3 @@
-import { startNumber } from './components/startNumber.js';
+import { startNumber } from './components/startNumber';
 
 window.addEventListener('load', () => startNumber())

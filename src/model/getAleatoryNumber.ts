@@ -1,8 +1,10 @@
 "use strict";
 
-const API = () => fetch(`https://us-central1-ss-devops.cloudfunctions.net/rand?min=1&max=300`, {method: `GET`});
+import { TAPI } from "../types/getAleatoryNumber.types";
 
-export const getAleatoryNumber = async () => {
+export const API = (): Promise<TAPI> => fetch(`https://us-central1-ss-devops.cloudfunctions.net/rand?min=1&max=300`, {method: `GET`});
+
+export const getAleatoryNumber = async (): Promise<number | unknown> => {
     try {
         const getRequestByAPI = await API();
         const getStatusByAPI = getRequestByAPI.status

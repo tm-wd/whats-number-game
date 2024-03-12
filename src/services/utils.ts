@@ -1,6 +1,8 @@
 import { TUTILS } from "../types/utils.types"
 
-export var generatedNumber: number | null = null;
+export class GeneratedNumber {
+    public static toGenerated: number | null | unknown = null;
+}
 
 export const UTILS:TUTILS = {
     BTNSEND: document.querySelector(`.hint__send`),
