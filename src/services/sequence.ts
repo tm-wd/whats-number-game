@@ -1,4 +1,4 @@
-export const mount = piece => {
+export const mount = (piece: string): string => {
     switch(piece){
         case '1':
             var m = `<svg width="75" height="135" viewBox="0 0 75 135">

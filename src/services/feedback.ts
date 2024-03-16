@@ -1,6 +1,6 @@
 import { UTILS } from './utils';
 
-export const feedback = (cls, text) => {
+export const feedback = (cls: string, text: string): object | undefined => {
     
     const CLASSREFERENCE = document.querySelector('.feedback');
 
@@ -8,6 +8,8 @@ export const feedback = (cls, text) => {
     let element = document.createElement('span');
     element.className = cls;
     element.textContent = text;
-    UTILS.FEEDBACK.appendChild(element)
-    
+
+    if (UTILS.FEEDBACK !== null) {
+        return UTILS.FEEDBACK.appendChild(element)
+    }
 }

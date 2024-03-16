@@ -23,7 +23,7 @@ const toKeyLiftedUp = (event: KeyboardEvent): void => {
 
 const toKeyClicked = (event: Event): void => {
     event.preventDefault();
-    compareNumber((UTILS.INPUTSEND as HTMLInputElement)!.value, GeneratedNumber.toGenerated);
+    compareNumber((UTILS.INPUTSEND as HTMLInputElement)!.value, Number(GeneratedNumber.toGenerated));
     (UTILS.INPUTSEND as HTMLInputElement)!.value = '';
     UTILS.INPUTSEND?.focus();
 }
