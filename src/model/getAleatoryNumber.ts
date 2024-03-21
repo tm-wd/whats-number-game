@@ -1,6 +1,6 @@
 "use strict";
 
-import { TAPI } from "../types/getAleatoryNumber.types";
+import type { TAPI } from "../types";
 
 export const API = (): Promise<TAPI> => fetch(`https://us-central1-ss-devops.cloudfunctions.net/rand?min=1&max=300`, {method: `GET`});
 

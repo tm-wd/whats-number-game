@@ -1,8 +1,9 @@
 "use strict";
 
 import { mount } from "../services/sequence";
+import type { TMountSegments } from "../types";
 
-export const mountSegments = (number: string | number | null): string => {
+export const mountSegments = (number: TMountSegments): string => {
 
     const VIEWNUMBER = document.querySelector(`.view-number__number`);
 

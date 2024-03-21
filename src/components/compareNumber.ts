@@ -6,8 +6,9 @@ import{
 } from '../services';
 
 import { mountSegments } from './mountSegments';
+import type { TMountSegments } from '../types';
 
-export const compareNumber = (typeNumber: string | number | null, hintNumber: number): object => {
+export const compareNumber = (typeNumber: TMountSegments, hintNumber: number): object => {
 
     mountSegments(typeNumber);
     typeNumber = Number(typeNumber)

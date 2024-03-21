@@ -7,3 +7,12 @@ export type TUTILS = {
     SEGMENT: Element | null;
     RESET: string;
 }
+
+export type TAPI = {
+    status: number,
+    json: () => Promise<any> | {
+        value: number
+    } 
+}
+
+export type TMountSegments = string | number | null

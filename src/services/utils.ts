@@ -1,4 +1,4 @@
-import { TUTILS } from "../types/utils.types"
+import type { TUTILS } from "../types"
 
 export class GeneratedNumber {
     public static toGenerated: number | null | unknown = null;
